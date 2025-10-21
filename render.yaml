@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: bot-leboncoin
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: "bash start.sh"
+    envVars:
+      - key: BOT_TOKEN
+        value: your_token_here  # Tu le changeras dans Render
